@@ -48,9 +48,13 @@
 
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
+            $lowcase_username = strtolower($username);
+            mkdir("uploads\\{$lowcase_username}");
             header('location: home_page.php');
         } else {
+            array_push($errors, "Username or Email already exist!");
             header("location: register.php");
+
         }
     }
 

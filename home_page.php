@@ -27,6 +27,8 @@ if (isset($_SESSION['username'])):
     $sql = "SELECT * FROM user WHERE username = '$username'";
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
+
+    require "isdirempty.php";
 ?>
 <!DOCTYPE html>
     <html> 
@@ -159,9 +161,15 @@ if (isset($_SESSION['username'])):
                     while ($rows = mysqli_fetch_assoc($result)) 
                     {
                 ?>
-                    <?php echo $rows['username']; ?>
+                    <?php echo $rows['username']; ?> <!--- fecth data from database --->
                 <?php
                     }
+                ?>
+                <br>
+                <?php
+                $lowcase_username = strtolower($username);
+                isDirEmpty("uploads\\{$lowcase_username}");
+
                 ?>
                 <p><a href="home_page.php?logout='1'" style="color: red;">Logout</a></p>
                 <br>
