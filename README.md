@@ -1,7 +1,9 @@
+<h1 style = 'color:red;'>(Warning!) IF YOU WANT TO TEST THIS PROJECT PLEASE GO TO "master branch"</h1>
 This is project for Software Development 2 | 2/2565
 
 <h1>How to test this website</h1>
 <h2>Prerequisite<h2>
+  
   - install php to your computer (and add your path that store php folder (e.g. C:/Program Files/php-8.2.2-Win32-vs16-x64) to 'Path'(System variables) 
   in Environment Variable
   
@@ -14,6 +16,7 @@ This is project for Software Development 2 | 2/2565
 
 
 <h2>Step</h2>
+  
   1.Clone this project to your computer.
   
   2.Open this project on Vs Code.
