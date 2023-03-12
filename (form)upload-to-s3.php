@@ -23,14 +23,6 @@
 
 		var_dump($result);
 	} 
-	if ($result){
-		//You need to redirect
-		header("Location: http://www.google.com/");
-		exit();
-	   }
-	  else{
-		// do something
-	  }
 	//header("location: {$_SERVER['DOCUMENT_ROOT']}/Project_Software_Dev 2/ยำใหญ่_ใส่ได้เต็มที่_register-login-php-/lol.html");
 	//header("location:home_page.php");
 ?>

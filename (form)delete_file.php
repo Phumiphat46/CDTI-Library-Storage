@@ -38,6 +38,4 @@ include("home_page.php");
     
     ?>
 
-    Replace name, example.txt, key and secret with the appropriate values for your AWS S3 bucket and IAM user.
-
-    You can pass the file_key parameter to the PHP file via $_POST or $_GET depending on the form method and handle the deletion logic in the PHP file.
+   

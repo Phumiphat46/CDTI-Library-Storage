@@ -37,8 +37,8 @@ if (isset($_SESSION['username'])):
             <link rel="stylesheet" href="home_style.css">
         </head>
         <body>
-            <nav class = "header">
-                <a href = "home_page.php" class= "Logo" style ="font-size:32px; font-weight:bold;"><i>CDTI's Library Storage</i></a>
+            <nav class = "header"><a href = "home_page.php" class= "Logo" style ="font-size:32px; font-weight:bold;"><i>CDTI's Library Storage</i></a>
+                
                 <div class = "header-right">
                     <a href = "#home" class = "active">Home</a>
                     <a href = "#creator">Creator</a>
@@ -78,7 +78,8 @@ if (isset($_SESSION['username'])):
 
                 <!--- Upload part --->
                 <form action = "(form)upload-to-s3.php" method = "post" enctype = "multipart/form-data">
-                    Select file to upload:
+                <h1>Upload File</h1>    
+                Select file to upload:
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload Image" name="submit">
                 </form>
@@ -90,11 +91,10 @@ if (isset($_SESSION['username'])):
                 ?>
 
                 <!--- Delete part --->
-                <h1>Delete File Form</h1>
+                <h1>Delete File </h1>
                 <form action="(form)delete_file.php" method="post">
                     <label for="filename">Enter the name of the file you want to delete:</label>
                     <input type="text" id="filename" name="filename" required>
-                    <br><br>
                     <input type="submit" value="Delete File">
                 </form>
 
@@ -114,7 +114,7 @@ if (isset($_SESSION['username'])):
 
                 <p>This website project is the part of Software Development 2 (semester 2/2566)</p> 
                 <p><u class = teachr_underline>Assigned by</u> <b>Teacher Kritsada Phromsuthirak</b></p>
-                <p>Created by <b>Phumiphat Pintira</b></p>
+                <p><u class = std_udl style = "color: purple; font-weight: bold;">Created by</u> <b>Phumiphat Pintira</b></p>
                 
             </div>
         </body>
